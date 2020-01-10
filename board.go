@@ -8,7 +8,8 @@ import (
 )
 
 const (
-	w, h  = 60, 20
+	w, h = 60, 20
+	// default is 1ms, "speed" is a factor to increase it.
 	speed = 100
 )
 
@@ -30,7 +31,6 @@ func main() {
 		board[i] = make([]bool, h)
 	}
 
-	// 0 means down|right, 1 means up|left
 	countw := 0
 	counth := 0
 	// 0 means down|right, 1 means up|left
